@@ -19,6 +19,7 @@ body {
     ),
     url("//images02.nicepage.com/c461c07a441a5d220e8feb1a/fbda0fe3ac0855448766ce16/v-min.jpg");
   background-size: cover;
+  background-position-x: right;
   height: 100vh;
 }
 
