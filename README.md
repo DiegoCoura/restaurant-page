@@ -1,0 +1,1 @@
+A Odin Project for practice building a project using webpack and modularity.
