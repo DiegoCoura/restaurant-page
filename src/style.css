@@ -26,10 +26,6 @@ button {
   cursor: pointer;
 }
 
-.content {
-  overflow: hidden;
-}
-
 .header__nav {
   display: flex;
   justify-content: center;
@@ -85,10 +81,11 @@ button {
   background-color: #0000009e;
   border-radius: 22px;
   color: white;
+  overflow: hidden;
 }
 
 .home-page {
-  width: inherit;
+  width: 100%;
   display: flex;
   padding: 20px 60px;
   align-items: center;
@@ -113,7 +110,7 @@ button {
 }
 
 .menu-page {
-  width: inherit;
+  width: 100%;
   line-height: 1.5rem;
   padding: 40px;
   display: flex;
@@ -128,7 +125,7 @@ button {
 }
 
 .about-page {
-  width: inherit;
+  width: 100%;
   display: flex;
   padding: 40px;
   gap: 50px;
@@ -151,5 +148,29 @@ button {
   to {
     margin-left: 0%;
     opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .content{
+    width: 90%;
+    height: 90%;
+    overflow: scroll;
+  }
+
+  .home-page,
+  .menu-page,
+  .about-page {
+    flex-direction: column;
+    padding: 20px 35px;
+  }
+
+  .home-page{
+    gap: 20px;
+  }
+
+  .home-text{
+    height: auto;
   }
 }
