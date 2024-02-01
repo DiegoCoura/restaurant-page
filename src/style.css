@@ -16,6 +16,7 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -153,8 +154,7 @@ button {
 }
 
 @media screen and (max-width: 760px) {
-
-  .content{
+  .content {
     width: 90%;
     height: 90%;
     overflow: scroll;
@@ -167,11 +167,11 @@ button {
     padding: 20px 35px;
   }
 
-  .home-page{
+  .home-page {
     gap: 20px;
   }
 
-  .home-text{
+  .home-text {
     height: auto;
   }
 }
