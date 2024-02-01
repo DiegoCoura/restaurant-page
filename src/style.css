@@ -1,3 +1,15 @@
+@keyframes slideIn {
+  from {
+    margin-left: 50%;
+    opacity: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,15 +76,15 @@ button {
   transition: 0.5s ease-in-out;
 }
 
-.left {
+.nav__left {
   left: 0;
 }
 
-.center {
-  left: 124px;
+.nav__center {
+  left: 120px;
 }
 
-.right {
+.nav__right {
   left: 245px;
 }
 
@@ -106,7 +118,7 @@ button {
   height: 440px;
 }
 
-.home-page .chef-img {
+.chef-img {
   height: 457px;
 }
 
@@ -136,20 +148,8 @@ button {
   animation-name: slideIn;
 }
 
-.about-page .about-img {
+.about-img {
   height: 420px;
-}
-
-@keyframes slideIn {
-  from {
-    margin-left: 50%;
-    opacity: 0%;
-  }
-
-  to {
-    margin-left: 0%;
-    opacity: 100%;
-  }
 }
 
 @media screen and (max-width: 760px) {
