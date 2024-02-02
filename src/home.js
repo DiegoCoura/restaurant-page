@@ -18,6 +18,7 @@ const homeOpeningHours = customCreateElement("p", {
 const homeImg = customCreateElement("img", {
   className: "chef-img",
   src: "https://img.freepik.com/fotos-gratis/retrato-de-homem-sorrindo-na-cozinha_23-2150771051.jpg",
+  alt: "chef Cassildo picture"
 });
 
 homePageTextContainer.appendChild(homeFirstText);

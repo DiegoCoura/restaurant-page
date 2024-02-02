@@ -17,6 +17,7 @@ const textDiv = customCreateElement("div", {
 const imgDiv = customCreateElement("img", {
   className: "about-img",
   src: aboutImg,
+  alt: "trattoria building"
 });
 
 container.appendChild(textDiv);
