@@ -7,6 +7,11 @@ const homeButton = document.querySelector(".home-btn");
 const menuButton = document.querySelector(".menu-btn");
 const aboutButton = document.querySelector(".about-btn");
 
+window.addEventListener("load", function () {
+  loadPage("home");
+  toggleHighlight(homeButton);
+})
+
 homeButton.addEventListener("click", function (e) {
   toggleHighlight(e.target);
   loadPage(e.target.id);
@@ -21,5 +26,3 @@ aboutButton.addEventListener("click", function (e) {
   toggleHighlight(e.target);
   loadPage(e.target.id);
 });
-
-document.onload = loadPage("home");
